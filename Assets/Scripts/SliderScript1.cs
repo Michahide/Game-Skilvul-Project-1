@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-public class SliderScript : MonoBehaviour
+public class SliderScriptSFX : MonoBehaviour
 {
     [SerializeField] private Slider _slider;
 

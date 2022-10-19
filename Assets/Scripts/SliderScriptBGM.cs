@@ -1,14 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-public class SliderScript : MonoBehaviour
+public class SliderScriptBGM : MonoBehaviour
 {
     [SerializeField] private Slider _slider;
 
     [SerializeField] private TextMeshProUGUI _sliderText;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,14 +19,7 @@ public class SliderScript : MonoBehaviour
             _sliderText.text = v.ToString("0");
         });
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void SliderVal(){
-        Debug.Log("Nilai volume berubah");
+    public void SliderBGMVal(){
+        Debug.Log("Nilai BGM " + ((int)_slider.value));
     }
 }

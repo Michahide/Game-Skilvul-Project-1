@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-public class SliderScript : MonoBehaviour
+public class SliderScriptSFX : MonoBehaviour
 {
     [SerializeField] private Slider _slider;
 
@@ -17,13 +17,7 @@ public class SliderScript : MonoBehaviour
         });
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void SliderVal(){
-        Debug.Log("Nilai volume berubah");
+    public void SliderSFXVal(){
+        Debug.Log("Nilai SFX " + ((int)_slider.value));
     }
 }
